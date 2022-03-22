@@ -1251,6 +1251,12 @@ img {
   }
 }
 
+@media (min-width: 1366px) {
+  .feadback__wrapper form {
+    grid-column: 2 / -1;
+  }
+}
+
 @media (max-width: 1365px) {
   .page-wrapper {
     max-width: 678px;

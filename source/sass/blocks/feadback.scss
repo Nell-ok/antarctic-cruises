@@ -50,6 +50,12 @@
   }
 }
 
+.feadback__wrapper form {
+  @media (min-width: $desktop-only) {
+    grid-column: 2 / -1;
+  }
+}
+
 .feadback__text {
   grid-column: 1 / 2;
   display: flex;
