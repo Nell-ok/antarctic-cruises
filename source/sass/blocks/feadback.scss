@@ -1,0 +1,117 @@
+.feadback {
+  background: $basic-dark url("../img/background-feedback.png") no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+
+  @media (min-width: $desktop-only) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-feedback@2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background: $basic-dark url("../img/background-feedback-tablet.png") no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-feedback-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background: $basic-dark url("../img/background-feedback-mobile.png") no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-feedback-mobile@2x.png");
+    }
+  }
+}
+
+.feadback__wrapper {
+  padding: 50px 60px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 144px;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 89px 129px 100px;
+    gap: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 59px 0 65px;
+    gap: 25px;
+  }
+}
+
+.feadback__text {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+  gap: 8px;
+
+  @media (max-width: $tablet-width) {
+    gap: 3px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    gap: 14px;
+  }
+}
+
+.feadback__text h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.feadback__text p {
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 6px;
+  }
+}
+
+.feadback__text br {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.feadback__form {
+  grid-column: 2 / -1;
+  padding: 43px 50px 50px;
+  background-color: $basic-dark;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    padding: 36px 30px 39px;
+  }
+}

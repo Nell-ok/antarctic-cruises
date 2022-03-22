@@ -1,0 +1,154 @@
+.main-nav--header {
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    position: absolute;
+    top: -17px;
+    right: 4px;
+    width: 24px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+    display: block;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  @media (max-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $basic-white;
+      box-shadow: 0 5px 0 0 $basic-white, 0 10px 0 0 $basic-white;
+    }
+
+    &:hover::before {
+      background-color: $basic-hover;
+      box-shadow: 0 5px 0 0 $basic-hover, 0 10px 0 0 $basic-hover;
+    }
+
+    &:active::before {
+      background-color: $basic-active;
+      box-shadow: 0 5px 0 0 $basic-active, 0 10px 0 0 $basic-active;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @media (max-width: $mobile-width) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: 18px;
+      height: 2px;
+      background-color: $basic-dark;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $basic-hover;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $basic-active;
+    }
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 594px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 505px;
+    gap: 24px;
+  }
+}
+
+.main-nav__list--header {
+  @media (max-width: $mobile-width) {
+    padding-top: 41px;
+    padding-left: 10px;
+    gap: 23px;
+  }
+}
+
+.main-nav__list--footer {
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.main-nav__link {
+  color: $basic-white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-hover;
+  }
+}
+
+.main-nav__link--header {
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 22px;
+    color: $basic-dark;
+  }
+}
+
+.main-nav__link--footer {
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.main-nav--closed .main-nav__list--header {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

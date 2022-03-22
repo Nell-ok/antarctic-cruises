@@ -1,0 +1,19 @@
+.logo svg {
+  display: block;
+  width: 70px;
+  height: 38px;
+  fill: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    width: 38px;
+    height: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 42px;
+  }
+}
+
+.logo:hover svg {
+  fill: $basic-hover;
+}

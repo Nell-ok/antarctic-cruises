@@ -1,0 +1,42 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: $basic-dark;
+  background-color: $basic-white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.page__body--hidden {
+  @media (max-width: $mobile-width) {
+    overflow-y: hidden;
+
+    &::before {
+      content: "";
+      width: 16vw;
+      height: 100vh;
+      background-color: $mask-body;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.page__body--hidden h1,
+.page__body--hidden h2,
+.page__body--hidden p {
+  @media (max-width: $mobile-width) {
+    color: transparent;
+  }
+}

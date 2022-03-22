@@ -1,0 +1,143 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 29px;
+
+  @media (max-width: $mobile-width) {
+    gap: 28px;
+  }
+}
+
+.form p {
+  margin: 0;
+  font-weight: 500;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width) {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (max-width: $mobile-width) {
+    gap: 19px;
+  }
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form__item input {
+  min-width: 271px;
+  padding: 11px 16px;
+  border: none;
+  color: $basic-dark;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &::placeholder {
+    color: rgba($basic-dark, 70%);
+  }
+
+  &:hover {
+    background-color: $basic-hover;
+  }
+
+  &:focus {
+    background-color: $lighter-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 198px;
+  }
+}
+
+.form__checkbox {
+  color: $basic-white;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    line-height: 12px;
+  }
+}
+
+.form__checkbox label {
+  padding: 2px 0 3px 23px;
+  position: relative;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 0 28px;
+  }
+}
+
+.form__checkbox input + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: $basic-white;
+
+    @media (max-width: $mobile-width) {
+      top: 1px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.form__checkbox input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 16px;
+    background: url("../img/check.svg") no-repeat;
+
+    @media (max-width: $mobile-width) {
+      top: 7px;
+    }
+  }
+}
+
+.form__checkbox input:hover + label {
+  &::before {
+    background-color: $basic-hover;
+  }
+}
+
+.form__button {
+  padding: 11px 89px;
+  border: none;
+  min-width: 303px;
+
+  @media (max-width: $mobile-width) {
+    padding: 11px 53px;
+    min-width: 230px;
+  }
+}

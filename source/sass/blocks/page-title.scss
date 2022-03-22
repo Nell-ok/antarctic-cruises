@@ -1,0 +1,84 @@
+.page-title {
+  padding: 271px 0 279px;
+  background: $basic-dark url("../img/background-title.png") no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+
+  @media (min-width: $desktop-only) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-title@2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 268px 0 276px;
+    background: $basic-dark url("../img/background-title-tablet.png") no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-title-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 177px 0 178px;
+    background: $basic-dark url("../img/background-title-mobile.png") no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-title-mobile@2x.png");
+    }
+  }
+}
+
+.page-title__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: $basic-white;
+  gap: 10px;
+
+  @media (max-width: $tablet-width) {
+    gap: 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    gap: 11px;
+  }
+}
+
+.page-title__wrapper h1 {
+  margin: 0;
+  padding-left: 95px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.page-title__wrapper p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 95px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
