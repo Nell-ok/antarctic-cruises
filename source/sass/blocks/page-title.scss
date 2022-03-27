@@ -37,6 +37,7 @@
   flex-direction: column;
   color: $basic-white;
   gap: 10px;
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
 
   @media (max-width: $tablet-width) {
     gap: 11px;
@@ -44,13 +45,14 @@
 
   @media (max-width: $mobile-width) {
     gap: 11px;
+    max-width: calc(100% - 30px);
   }
 }
 
 .page-title__wrapper h1 {
   margin: 0;
-  padding-left: 95px;
-  font-size: 54px;
+  padding-left: 8.2%;
+  font-size: calc(52px + (54 - 52) * ((100vw - 1025px) / (1366 - 1025)));
   font-weight: 700;
   line-height: 66px;
 
@@ -68,9 +70,9 @@
 
 .page-title__wrapper p {
   margin: 0;
-  font-size: 20px;
+  font-size: calc(18px + (20 - 18) * ((100vw - 1025px) / (1366 - 1025)));
   line-height: 24px;
-  padding-left: 95px;
+  padding-left: 8.2%;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;

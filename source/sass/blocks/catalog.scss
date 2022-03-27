@@ -4,7 +4,8 @@
   flex-wrap: wrap;
   gap: 49px;
   align-items: center;
-  padding: 110px 0 120px;
+  padding: 110px 6.5% 120px;
+  max-width: 1160px;
 
   @media (max-width: $tablet-width) {
     padding: 90px 0 100px;
@@ -18,7 +19,7 @@
 
 .catalog__wrapper h2 {
   margin: 0;
-  font-size: 28px;
+  font-size: calc(26px + (28 - 26) * ((100vw - 1025px) / (1366 - 1025)));
   font-weight: 600;
   line-height: 42px;
   text-align: center;
@@ -41,6 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
+  column-gap: 0.26%;
   justify-content: space-around;
 
   @media (max-width: $mobile-width) {
@@ -53,7 +55,23 @@
   position: relative;
 
   &:hover .catalog__tooltip {
-    display: flex;
+    opacity: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &:focus .catalog__tooltip {
+    opacity: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -107,5 +125,5 @@
 }
 
 .catalog__tooltip {
-  display: none;
+  opacity: 0;
 }

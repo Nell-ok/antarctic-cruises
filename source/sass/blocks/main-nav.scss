@@ -11,7 +11,7 @@
     padding: 0;
     position: absolute;
     top: -17px;
-    right: 4px;
+    right: 0;
     width: 24px;
     height: 12px;
     border: none;
@@ -49,6 +49,8 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $mobile-width) {
+    right: -26px;
+
     &::before,
     &::after {
       content: "";
@@ -85,7 +87,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: 594px;
+  max-width: calc(540px + (598 - 540) * ((100vw - 1025px) / (1366 - 1025)));
   display: flex;
   flex-wrap: wrap;
   gap: 33px;
@@ -101,6 +103,7 @@
     padding-top: 41px;
     padding-left: 10px;
     gap: 23px;
+    flex-direction: column;
   }
 }
 
@@ -113,7 +116,7 @@
 
 .main-nav__link {
   color: $basic-white;
-  font-size: 16px;
+  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
   font-weight: 500;
   line-height: 20px;
   cursor: pointer;

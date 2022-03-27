@@ -11,4 +11,9 @@
   &:hover {
     color: $basic-hover;
   }
+
+  &:focus {
+    background-color: $lighter-white;
+    box-shadow: 0 0 0 2px $basic-hover;
+  }
 }

@@ -64,6 +64,8 @@
 
   @media (max-width: $mobile-width) {
     min-width: 198px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -128,6 +130,12 @@
 .form__checkbox input:hover + label {
   &::before {
     background-color: $basic-hover;
+  }
+}
+
+.form__checkbox input:focus + label {
+  &::before {
+    box-shadow: 0 0 0 2px $basic-hover;
   }
 }
 

@@ -1,3 +1,4 @@
+const mainPage = document.querySelector('.page');
 const pageBody = document.querySelector('.page__body');
 const pageHeader = document.querySelector('.page-header');
 const pageLogo = document.querySelector('.page-header__logo');
@@ -41,11 +42,28 @@ const onClick = (element) => {
   });
 };
 
-const sortArray = () => {
-  linkNav.forEach((link) => {
-    onClick(link);
+const onClickLink = (element) => {
+  element.addEventListener('click', () => {
+    closeMenu();
+    mainPage.classList.add('page--scroll');
   });
 };
+
+const sortArray = () => {
+  linkNav.forEach((link) => {
+    onClickLink(link);
+  });
+};
+
+const closeMenuOutside = (evt) => {
+  if (evt.target === pageHeader || pageHeader.contains(evt.target)) {
+    return;
+  }
+  closeMenu();
+  document.removeEventListener(closeMenuOutside);
+};
+
+document.addEventListener('click', closeMenuOutside);
 
 if (isElements) {
   activateScript();

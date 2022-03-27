@@ -13,6 +13,7 @@
     top: 0;
     right: 0;
     padding-left: 15px;
+    overflow-y: scroll;
   }
 }
 
@@ -23,16 +24,25 @@
   align-items: center;
   padding-top: 35px;
   padding-bottom: 35px;
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
 
   @media (max-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 26px;
+    max-width: calc(100% - 90px);
   }
 
   @media (max-width: $mobile-width) {
     display: block;
     padding-top: 19px;
     padding-bottom: 20px;
+    max-width: calc(100% - 30px);
+  }
+}
+
+.page-header--opened-nav .page-header__wrapper {
+  @media (max-width: $mobile-width) {
+    margin: 0;
   }
 }
 

@@ -2,6 +2,10 @@
   height: 100%;
 }
 
+.page--scroll {
+  scroll-behavior: smooth;
+}
+
 .page__body {
   min-width: 320px;
   margin: 0;

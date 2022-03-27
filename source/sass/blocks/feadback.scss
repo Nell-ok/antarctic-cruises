@@ -29,12 +29,13 @@
 }
 
 .feadback__wrapper {
-  padding: 50px 60px;
+  padding: 50px calc(45px + (60 - 45) * ((100vw - 1025px) / (1366 - 1025)));
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr min-content;
-  gap: 144px;
+  gap: 1.8%;
   align-items: center;
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -47,6 +48,7 @@
   @media (max-width: $mobile-width) {
     padding: 59px 0 65px;
     gap: 25px;
+    max-width: calc(100% - 30px);
   }
 }
 
@@ -76,7 +78,7 @@
 
 .feadback__text h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: calc(38px + (40 - 38) * ((100vw - 1025px) / (1366 - 1025)));
   font-weight: 700;
   line-height: 60px;
 
@@ -93,6 +95,11 @@
 
 .feadback__text p {
   margin: 0;
+  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
@@ -109,10 +116,11 @@
 
 .feadback__form form {
   grid-column: 2 / -1;
-  padding: 43px 50px 50px;
+  padding: 43px calc(44px + (50 - 44) * ((100vw - 1025px) / (1366 - 1025))) 50px;
   background-color: $basic-dark;
 
   @media (max-width: $tablet-width) {
+    padding: 43px 50px 50px;
     margin: 0 9px;
   }
 
