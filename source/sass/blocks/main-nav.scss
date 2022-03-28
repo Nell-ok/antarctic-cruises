@@ -87,7 +87,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: calc(540px + (598 - 540) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(540px + (598 - 540) * ((100vw - 1024px) / (1366 - 1024)));
   display: flex;
   flex-wrap: wrap;
   gap: 33px;
@@ -116,7 +116,7 @@
 
 .main-nav__link {
   color: $basic-white;
-  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 500;
   line-height: 20px;
   cursor: pointer;

@@ -497,7 +497,7 @@ img {
   align-items: center;
   padding-top: 35px;
   padding-bottom: 35px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .page-main {
@@ -517,7 +517,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: calc(540px + (598 - 540) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(540px + (598 - 540) * ((100vw - 1024px) / (1366 - 1024)));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,7 @@ img {
 
 .main-nav__link {
   color: #f9fbfd;
-  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 500;
   line-height: 20px;
   cursor: pointer;
@@ -562,7 +562,7 @@ img {
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .page-footer__wrapper-nav {
@@ -639,20 +639,20 @@ img {
   flex-direction: column;
   color: #f9fbfd;
   gap: 10px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .page-title__wrapper h1 {
   margin: 0;
   padding-left: 8.2%;
-  font-size: calc(52px + (54 - 52) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(52px + (54 - 52) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 700;
   line-height: 66px;
 }
 
 .page-title__wrapper p {
   margin: 0;
-  font-size: calc(18px + (20 - 18) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(18px + (20 - 18) * ((100vw - 1024px) / (1366 - 1024)));
   line-height: 24px;
   padding-left: 8.2%;
 }
@@ -672,7 +672,7 @@ img {
   -ms-grid-columns: 1fr min-content;
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .description__text {
@@ -693,20 +693,20 @@ img {
 
 .description__text h2 {
   margin: 0;
-  font-size: calc(26px + (28 - 26) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(26px + (28 - 26) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 600;
   line-height: 42px;
 }
 
 .description__text p {
   margin: 0;
-  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1366 - 1024)));
   line-height: 24px;
 }
 
 .description__photo {
   grid-column: 2 / -1;
-  width: calc(420px + (560 - 420) * ((100vw - 1025px) / (1366 - 1025)));
+  width: calc(420px + (560 - 420) * ((100vw - 1024px) / (1366 - 1024)));
   padding-top: 53.75%;
   background: #011c40 url("../img/description-photo.png") no-repeat;
   background-size: cover;
@@ -736,12 +736,12 @@ img {
   -ms-flex-align: center;
   align-items: center;
   gap: 48px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .features__wrapper h2 {
   margin: 0;
-  font-size: calc(26px + (28 - 26) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(26px + (28 - 26) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 600;
   line-height: 42px;
   text-align: center;
@@ -789,13 +789,13 @@ img {
 
 .features__item h3 {
   margin: 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 500;
 }
 
 .features__item p {
   margin: 0;
-  font-size: calc(12px + (14 - 12) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(12px + (14 - 12) * ((100vw - 1024px) / (1366 - 1024)));
   line-height: 20px;
 }
 
@@ -819,7 +819,7 @@ img {
 
 .catalog__wrapper h2 {
   margin: 0;
-  font-size: calc(26px + (28 - 26) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(26px + (28 - 26) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 600;
   line-height: 42px;
   text-align: center;
@@ -975,7 +975,7 @@ img {
 }
 
 .feadback__wrapper {
-  padding: 50px calc(45px + (60 - 45) * ((100vw - 1025px) / (1366 - 1025)));
+  padding: 50px calc(45px + (60 - 45) * ((100vw - 1024px) / (1366 - 1024)));
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -ms-grid;
@@ -988,7 +988,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .feadback__text {
@@ -1010,19 +1010,19 @@ img {
 
 .feadback__text h2 {
   margin: 0;
-  font-size: calc(38px + (40 - 38) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(38px + (40 - 38) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 700;
   line-height: 60px;
 }
 
 .feadback__text p {
   margin: 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .feadback__form form {
   grid-column: 2 / -1;
-  padding: 43px calc(44px + (50 - 44) * ((100vw - 1025px) / (1366 - 1025))) 50px;
+  padding: 43px calc(44px + (50 - 44) * ((100vw - 1024px) / (1366 - 1024))) 50px;
   background-color: #011c40;
 }
 
@@ -1041,11 +1041,11 @@ img {
   -ms-flex-align: center;
   align-items: center;
   gap: 8.62%;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .contacts__map {
-  width: calc(420px + (560 - 420) * ((100vw - 1025px) / (1366 - 1025)));
+  width: calc(420px + (560 - 420) * ((100vw - 1024px) / (1366 - 1024)));
   height: 306px;
   background: #ffffe0 url("../img/background-map.jpg") no-repeat;
   -o-object-fit: cover;
@@ -1054,7 +1054,7 @@ img {
 }
 
 .contacts__map iframe {
-  width: calc(420px + (560 - 420) * ((100vw - 1025px) / (1366 - 1025)));
+  width: calc(420px + (560 - 420) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .contacts__map svg {
@@ -1079,7 +1079,7 @@ img {
 .contacts__info p {
   margin: 0;
   font-weight: 500;
-  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1366 - 1024)));
 }
 
 .contacts__list {
@@ -1112,7 +1112,7 @@ img {
 }
 
 .contacts__link {
-  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 400;
   line-height: 24px;
   color: #011c40;
@@ -1289,7 +1289,7 @@ img {
   box-shadow: 0 0 0 2px #d2cb7f;
 }
 
-@media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1025px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1025px) and (min-resolution: 2dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .page-title {
     background-image: url("../img/background-title@2x.png");
   }
@@ -1311,13 +1311,13 @@ img {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .feadback__form {
     grid-column: 2 / -1;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .page-wrapper {
     max-width: 678px;
   }
@@ -1598,7 +1598,7 @@ img {
   }
 }
 
-@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1024px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .page-title {
     background-image: url("../img/background-title-tablet@2x.png");
   }
@@ -1869,8 +1869,8 @@ img {
   }
 
   .description__photo {
-    width: 100%;
-    height: 186px;
+    width: calc(290px + (737 - 290) * ((100vw - 320px) / (767 - 320)));
+    height: calc(186px + (472 - 186) * ((100vw - 320px) / (767 - 320)));
     background: #011c40 url("../img/description-photo-mobile.png") no-repeat;
     background-size: 100% 100%;
   }

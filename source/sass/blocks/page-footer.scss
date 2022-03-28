@@ -11,7 +11,7 @@
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     padding-top: 46px;

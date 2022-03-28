@@ -37,7 +37,7 @@
   flex-direction: column;
   color: $basic-white;
   gap: 10px;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     gap: 11px;
@@ -52,7 +52,7 @@
 .page-title__wrapper h1 {
   margin: 0;
   padding-left: 8.2%;
-  font-size: calc(52px + (54 - 52) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(52px + (54 - 52) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 700;
   line-height: 66px;
 
@@ -70,7 +70,7 @@
 
 .page-title__wrapper p {
   margin: 0;
-  font-size: calc(18px + (20 - 18) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(18px + (20 - 18) * ((100vw - 1024px) / (1366 - 1024)));
   line-height: 24px;
   padding-left: 8.2%;
 

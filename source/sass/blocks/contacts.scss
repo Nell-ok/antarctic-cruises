@@ -15,7 +15,7 @@
   grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 8.62%;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     gap: 30px;
@@ -29,7 +29,7 @@
 }
 
 .contacts__map {
-  width: calc(420px + (560 - 420) * ((100vw - 1025px) / (1366 - 1025)));
+  width: calc(420px + (560 - 420) * ((100vw - 1024px) / (1366 - 1024)));
   height: 306px;
   background: $background-map url("../img/background-map.jpg") no-repeat;
   object-fit: cover;
@@ -65,7 +65,7 @@
 }
 
 .contacts__map iframe {
-  width: calc(420px + (560 - 420) * ((100vw - 1025px) / (1366 - 1025)));
+  width: calc(420px + (560 - 420) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     width: 324px;
@@ -114,7 +114,7 @@
 .contacts__info p {
   margin: 0;
   font-weight: 500;
-  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -151,7 +151,7 @@
 }
 
 .contacts__link {
-  font-size: calc(14px + (16 - 14) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 400;
   line-height: 24px;
   color: $basic-dark;

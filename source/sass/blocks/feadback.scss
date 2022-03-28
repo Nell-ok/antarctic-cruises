@@ -29,13 +29,13 @@
 }
 
 .feadback__wrapper {
-  padding: 50px calc(45px + (60 - 45) * ((100vw - 1025px) / (1366 - 1025)));
+  padding: 50px calc(45px + (60 - 45) * ((100vw - 1024px) / (1366 - 1024)));
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr min-content;
   gap: 1.8%;
   align-items: center;
-  max-width: calc(900px + (1160 - 900) * ((100vw - 1025px) / (1366 - 1025)));
+  max-width: calc(900px + (1160 - 900) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -78,7 +78,7 @@
 
 .feadback__text h2 {
   margin: 0;
-  font-size: calc(38px + (40 - 38) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(38px + (40 - 38) * ((100vw - 1024px) / (1366 - 1024)));
   font-weight: 700;
   line-height: 60px;
 
@@ -95,7 +95,7 @@
 
 .feadback__text p {
   margin: 0;
-  font-size: calc(16px + (18 - 16) * ((100vw - 1025px) / (1366 - 1025)));
+  font-size: calc(16px + (18 - 16) * ((100vw - 1024px) / (1366 - 1024)));
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
@@ -116,7 +116,7 @@
 
 .feadback__form form {
   grid-column: 2 / -1;
-  padding: 43px calc(44px + (50 - 44) * ((100vw - 1025px) / (1366 - 1025))) 50px;
+  padding: 43px calc(44px + (50 - 44) * ((100vw - 1024px) / (1366 - 1024))) 50px;
   background-color: $basic-dark;
 
   @media (max-width: $tablet-width) {
