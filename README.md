@@ -4,7 +4,7 @@
 
 ---
 
-# ![Image of project «Antarctic Cruises»](https://ic.wampi.ru/2022/09/18/SmartDevice.md.png)
+# ![Image of project «Antarctic Cruises»](https://ie.wampi.ru/2022/09/18/AntarcticCruises.md.png)
 
 * [Подробнее](https://antarctic-cruises.netlify.app/)
 
